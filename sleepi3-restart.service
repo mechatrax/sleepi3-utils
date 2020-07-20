@@ -1,0 +1,15 @@
+[Unit]
+Description=sleepi3-utils postprocess
+DefaultDependencies=no
+After=sleepi3-start.service
+Before=shutdown.target sleepi3-systohc.service
+Conflicts=sleepi3-monitor.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/default/sleepi3
+ExecStart=/usr/lib/sleepi3-utils/restart.sh
+TimeoutSec=30s
+
+[Install]
+WantedBy=reboot.target

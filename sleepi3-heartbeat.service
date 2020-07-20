@@ -1,0 +1,14 @@
+[Unit]
+Description=sleepi3 software heartbeat
+DefaultDependencies=no
+After=sysinit.target
+
+[Service]
+Type=simple
+Nice=19
+OOMScoreAdjust=1000
+Environment=LED_PATH=/sys/class/leds/sleepi:led0
+ExecStart=/usr/lib/sleepi3-utils/heartbeat.py
+
+[Install]
+WantedBy=sysinit.target

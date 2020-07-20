@@ -1,0 +1,13 @@
+[Unit]
+Description=Initialize system clock from sleepi3
+DefaultDependencies=no
+Requires=dev-rtc.device
+After=dev-rtc.device
+Before=time-sync.target sysinit.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/default/sleepi3
+ExecStart=/usr/lib/sleepi3-utils/hctosys.sh
+TimeoutSec=30s
+KillSignal=SIGKILL

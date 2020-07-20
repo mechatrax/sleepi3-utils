@@ -1,0 +1,8 @@
+debian/debhelper-build-stamp
+debian/files
+debian/*.log
+debian/*.debhelper
+debian/*.substvars
+
+debian/sleepi3-utils/*
+

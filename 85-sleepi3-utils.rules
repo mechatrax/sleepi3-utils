@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="rtc", TAG+="systemd", ENV{SYSTEMD_WANTS}+="sleepi3-hctosys.service"

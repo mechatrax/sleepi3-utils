@@ -1,0 +1,24 @@
+#!/bin/sh
+# postrm script for sleepi3-utils
+#
+# see: dh_installdeb(1)
+
+set -e
+
+case "$1" in
+    upgrade)
+    ;;
+
+    purge|remove|failed-upgrade|abort-install|abort-upgrade|disappear)
+        sleepi3ctl set watchdog-timeout 0
+    ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
