@@ -1,0 +1,79 @@
+_sleepi3ctl_gen_prms()
+{
+	local prms_get=(
+		'measurement-interval'
+		'extin'
+		'extin-count'
+		'extin-powerdown'
+		'extin-trigger'
+		'extout'
+		'restart'
+		'restore-voltage'
+		'ri-trigger'
+		'switch'
+		'switch-count'
+		'sleep-timeout'
+		'watchdog-timeout'
+		'wakeup-flag'
+		'wakeup-status'
+		'voltage'
+                'uvlo'
+	)
+	local prms_set=(
+		'measurement-interval'
+		'extin-powerdown'
+		'extin-trigger'
+		'extout'
+		'restart'
+		'restore-voltage'
+		'ri-trigger'
+		'sleep-timeout'
+		'watchdog-timeout'
+                'uvlo'
+	)
+	case $prev in
+	-g|--get|get)
+		COMPREPLY=( $(compgen -W '${prms_get[@]}' -- $cur) )
+		;;
+	-s|--set|set)
+		COMPREPLY=( $(compgen -W '${prms_set[@]}' -- $cur) )
+		;;
+	esac
+}
+
+_sleepi3ctl_gen_cmds()
+{
+	local cmds=(
+		'get'
+		'set'
+		'version'
+		'help'
+	)
+	COMPREPLY=( $(compgen -W '${cmds[@]}' -- $cur) )
+}
+
+_sleepi3ctl()
+{
+	local cur prev words cword
+	_init_completion || return
+
+	if [ $cword -eq 1 ]
+	then
+		_sleepi3ctl_gen_cmds
+		return
+	fi
+
+	case $prev in
+	-h|--help|help|-v|--version|version)
+		;;
+	-*|get|set)
+		_sleepi3ctl_gen_prms
+		;;
+	voltage)
+		COMPREPLY=( $(compgen -W '1 2 active all' -- $cur) )
+		;;
+	esac
+} &&
+
+complete -F _sleepi3ctl sleepi3ctl
+

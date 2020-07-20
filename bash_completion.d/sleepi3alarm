@@ -1,0 +1,21 @@
+_sleepi3alarm()
+{
+	local cmds=(
+		'get'
+		'set'
+		'clear'
+		'help'
+		'version'
+	)
+	local cur prev words cword
+	_init_completion || return
+
+	if [ $cword -eq 1 ]
+	then
+		COMPREPLY=( $(compgen -W '${cmds[@]}' -- $cur) )
+		return
+	fi
+} &&
+
+complete -F _sleepi3alarm sleepi3alarm
+

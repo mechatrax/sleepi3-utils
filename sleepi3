@@ -1,0 +1,75 @@
+#
+# sleepi3 configuration
+#
+
+#
+# RTC device name
+#
+RTC_DEVICE=rtc0
+
+#
+# RTC synchronization at boot
+#
+# HCTOSYS=yes : enable the synchronization to system clock from rtc
+# HCTOSYS=no  : disable the synchronization to system clock from rtc
+#
+HCTOSYS=yes
+
+#
+# RTC synchronization at shutdown
+#
+# SYSTOHC=yes : enable the synchronization to rtc from system clock
+# SYSTOHC=no  : disable the synchronization to rtc from system clock
+#
+SYSTOHC=yes
+
+#
+# Power management module I2C address
+#
+# DIP1 / DIP2 = I2C address
+# OFF  / OFF  = 0x6E
+# ON   / OFF  = 0x6D
+# OFF  / ON   = 0x6B
+# ON   / ON   = Disabled
+# 
+I2C_ADDRESS=0x6E
+
+#
+# Reboot if heartbeat signal is not received more than HEARTBEAT_TIMEOUT seconds
+#
+# HEARTBEAT_TIMEOUT=0 : disabled
+# HEARTBEAT_TIMEOUT=N : N[1..255] seconds
+#
+HEARTBEAT_TIMEOUT=60
+
+#
+# Retry on boot failure
+#
+# RETRY_BOOT=0 : do not retry on boot failure
+# RETRY_BOOT=1 : retry on boot failure
+#
+RETRY_BOOT=1
+
+#
+# Time to wait for heartbeat signal on normal boot
+#
+# BOOT_TIMEOUT=0 : wait forever
+# BOOT_TIMEOUT=N : N[1..255] seconds
+#
+BOOT_TIMEOUT=90
+
+#
+# Time until power off after shutdown
+#
+# POWEROFF_DELAY=0 : do not power off
+# POWEROFF_DELAY=N : N[1..255] seconds
+#
+POWEROFF_DELAY=10
+
+#
+# Forced shutdown by external input 
+#
+# EXTIN_FORCED_SHUTDOWN=0 : disabled
+# EXTIN_FORCED_SHUTDOWN=1 : external input has been detected 10s and shutdown
+#
+EXTIN_FORCED_SHUTDOWN=0

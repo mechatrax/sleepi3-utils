@@ -1,0 +1,17 @@
+./sleepi3ctl /usr/sbin/
+./sleepi3alarm /usr/sbin/
+./85-sleepi3-utils.rules /lib/udev/rules.d/
+./timeoutpid.sh /usr/lib/sleepi3-utils/
+./systohc.sh /usr/lib/sleepi3-utils/
+./heartbeat.py /usr/lib/sleepi3-utils/
+./hctosys.sh /usr/lib/sleepi3-utils/
+./start.sh /usr/lib/sleepi3-utils/
+./stop.sh /usr/lib/sleepi3-utils/
+./restart.sh /usr/lib/sleepi3-utils/
+./sleepi3-systohc.service /lib/systemd/system/
+./sleepi3-hctosys.service /lib/systemd/system/
+./sleepi3-start.service /lib/systemd/system/
+./sleepi3-stop.service /lib/systemd/system/
+./sleepi3-restart.service /lib/systemd/system/
+./sleepi3-heartbeat.service /lib/systemd/system/
+./sleepi3 /etc/default/

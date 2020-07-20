@@ -1,0 +1,14 @@
+[Unit]
+Description=sleepi3-utils preprocess
+DefaultDependencies=no
+After=sysinit.target
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/default/sleepi3
+ExecStart=/usr/lib/sleepi3-utils/start.sh
+TimeoutSec=30s
+
+[Install]
+WantedBy=sysinit.target
