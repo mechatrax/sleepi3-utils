@@ -1,3 +1,9 @@
+sleepi3-utils (1.0.1) buster; urgency=medium
+
+  * Modify timeoutpid.sh
+
+ -- Masahiro Honda <honda@mechatrax.com>  Mon, 17 Aug 2020 19:09:46 +0900
+
 sleepi3-utils (1.0.0) buster; urgency=medium
 
   * Initial release
