@@ -10,7 +10,7 @@ case "$1" in
     ;;
 
     purge|remove|failed-upgrade|abort-install|abort-upgrade|disappear)
-        sleepi3ctl set watchdog-timeout 0
+        sleepi3ctl set watchdog-timeout 0 || true
     ;;
 
     *)
