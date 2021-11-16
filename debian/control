@@ -1,16 +1,16 @@
 Source: sleepi3-utils
 Section: admin
 Priority: optional
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Build-Depends: debhelper (>= 12), bash-completion
-Standards-Version: 4.3.0
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Build-Depends: debhelper-compat (= 12), bash-completion
+Standards-Version: 4.5.1
 Vcs-Git: https://github.com/mechatrax/sleepi3-utils.git
 Vcs-browser: https://github.com/mechatrax/sleepi3-utils
-Homepage: https://www.mechatrax.com/
+Homepage: https://mechatrax.com/
 
 Package: sleepi3-utils
 Architecture: all
-Depends: ${misc:Depends}, sleepi3-firmware, python3-sleepi (>=1.1.0), python3
+Depends: ${misc:Depends}, sleepi3-firmware, python3-sleepi, python3
 Conflicts: fake-hwclock, sleepi-utils, sleepi2-utils
 Description: Utilities for slee-Pi 3
  This package contains command utilities to control slee-Pi 3.

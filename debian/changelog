@@ -1,3 +1,12 @@
+sleepi3-utils (1.0.3) bullseye; urgency=medium
+
+  * debian/compat: Deleted
+  * debian/control
+    - Change Build-Depends to debhelper-compat from debhelper
+    - Bump Standards-Version to 4.5.1
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Tue, 20 Jul 2021 08:48:03 +0000
+
 sleepi3-utils (1.0.2) buster; urgency=medium
 
   * Fix prerm
