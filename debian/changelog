@@ -1,3 +1,9 @@
+sleepi3-utils (1.0.4) bullseye; urgency=medium
+
+  * Modify start.sh
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Tue, 01 Feb 2022 16:58:02 +0900
+
 sleepi3-utils (1.0.3) bullseye; urgency=medium
 
   * debian/compat: Deleted
