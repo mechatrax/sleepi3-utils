@@ -1,3 +1,9 @@
+sleepi3-utils (1.0.2+git20220201.efb4eea) buster; urgency=medium
+
+  * Modify start.sh
+
+ -- Masahiro Honda <honda@mechatrax.com>  Tue, 01 Feb 2022 14:43:02 +0900
+
 sleepi3-utils (1.0.2) buster; urgency=medium
 
   * Fix prerm
