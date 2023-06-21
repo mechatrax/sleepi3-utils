@@ -4,6 +4,8 @@ import sys
 from importlib import machinery, util
 from pathlib import Path
 
+sys.dont_write_bytecode = True
+
 path = Path('/usr/sbin/sleepi3ctl')
 
 loader = machinery.SourceFileLoader(str(path), str(path))
