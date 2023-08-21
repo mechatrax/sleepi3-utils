@@ -89,12 +89,8 @@ def parse_environment(path):
         'I2C_BUS': DEFAULT_I2C_BUS,
     }})
     
-    try:
-        with open(path, 'r') as file:
-            string = file.read()
-    except IOError as e:
-        print("Cannot access {}.".format(path))
-        exit(e)
+    with open(path, 'r') as file:
+        string = file.read()
     
     parser.read_string('[env]' + string)
     env = parser['env']
@@ -307,11 +303,7 @@ def main(args):
     bus = int(env['I2C_BUS'])
     addr = int(env['I2C_ADDRESS'], 16)
     
-    try:
-        sleepi3 = sleepi.Sleepi3(bus, addr)
-    except IOError as e:
-        print("Cannot access i2c{}.".format(bus))
-        sys.exit(e)
+    sleepi3 = sleepi.Sleepi3(bus, addr)
     
     cmd = args[0]
     params = args[1:]
@@ -350,5 +342,9 @@ if __name__ == '__main__':
         help('all')
         sys.exit(2)
 
-    main(sys.argv[1:])
+    try:
+        main(sys.argv[1:])
+    except Exception as e:
+        sys.exit(e)
+
 

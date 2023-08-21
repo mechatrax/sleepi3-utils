@@ -1,3 +1,10 @@
+sleepi3-utils (1.0.5) bullseye; urgency=medium
+
+  * debian/control: Add Uploaders
+  * sleepi3ctl: Fix to print error message to stderr
+
+ -- Masahiro Honda <honda@mechatrax.com>  Mon, 21 Aug 2023 18:24:15 +0900
+
 sleepi3-utils (1.0.4) bullseye; urgency=medium
 
   * Modify start.sh
