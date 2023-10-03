@@ -299,14 +299,8 @@ slee-Pi 3 の設定を行うためのファイルです。
 ### /usr/lib/sleepi3-utils/heartbeat.py  
 ソフトウェアハートビート動作を行うスクリプトファイルです。
 
-### /usr/lib/sleepi3-utils/restart.sh  
-slee-Pi 3 の再起動設定を行うスクリプトファイルです。
-
-### /usr/lib/sleepi3-utils/start.sh  
-slee-Pi 3 の起動設定を行うスクリプトファイルです。
-
-### /usr/lib/sleepi3-utils/stop.sh  
-slee-Pi 3 の停止設定を行うスクリプトファイルです。
+### /usr/lib/sleepi3-utils/config.py  
+slee-Pi 3 の起動、再起動、停止の設定を行う実行ファイルです。
 
 ### /usr/lib/sleepi3-utils/systohc.sh  
 システムからリアルタイムクロックへ時刻を同期するスクリプトファイルです。

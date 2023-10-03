@@ -1,3 +1,13 @@
+sleepi3-utils (1.0.6) bookworm; urgency=medium
+
+  * Change initialization process to use udev rules
+  * debian/control: Bump Standards-Version to 4.6.2
+  * debian/install
+    - Add config.py
+    - Remove no use scripts
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Tue, 03 Oct 2023 10:39:08 +0900
+
 sleepi3-utils (1.0.5) bullseye; urgency=medium
 
   * debian/control: Add Uploaders

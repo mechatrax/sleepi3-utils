@@ -5,9 +5,7 @@
 ./systohc.sh /usr/lib/sleepi3-utils/
 ./heartbeat.py /usr/lib/sleepi3-utils/
 ./hctosys.sh /usr/lib/sleepi3-utils/
-./start.sh /usr/lib/sleepi3-utils/
-./stop.sh /usr/lib/sleepi3-utils/
-./restart.sh /usr/lib/sleepi3-utils/
+./config.py /usr/lib/sleepi3-utils/
 ./sleepi3-systohc.service /lib/systemd/system/
 ./sleepi3-hctosys.service /lib/systemd/system/
 ./sleepi3-start.service /lib/systemd/system/

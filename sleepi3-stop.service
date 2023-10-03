@@ -7,9 +7,7 @@ Conflicts=sleepi3-monitor.service sleepi3-heartbeat.service
 
 [Service]
 Type=oneshot
-Environment=LED_PATH=/sys/class/leds/sleepi:led0
-EnvironmentFile=/etc/default/sleepi3
-ExecStart=/usr/lib/sleepi3-utils/stop.sh
+ExecStart=/usr/lib/sleepi3-utils/config.py stop
 TimeoutSec=30s
 
 [Install]
