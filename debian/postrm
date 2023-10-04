@@ -1,0 +1,15 @@
+#!/bin/sh
+# postrm script for sleepi3-utils
+#
+# see: dh_installdeb(1)
+
+set -e
+
+if [ "$1" = "purge" ]; then
+  rm -rf /usr/share/sleepi3-utils/__pycache__ || true
+fi
+
+#DEBHELPER#
+
+exit 0
+

@@ -1,5 +1,5 @@
 #!/bin/sh
-# postrm script for sleepi3-utils
+# prerm script for sleepi3-utils
 #
 # see: dh_installdeb(1)
 
