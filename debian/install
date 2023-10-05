@@ -13,3 +13,4 @@
 ./sleepi3-restart.service /lib/systemd/system/
 ./sleepi3-heartbeat.service /lib/systemd/system/
 ./sleepi3 /etc/default/
+./sleepi3_util.py /usr/share/sleepi3-utils/
