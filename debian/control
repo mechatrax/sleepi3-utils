@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
 Uploaders: Masahiro Honda <honda@mechatrax.com>
 Build-Depends: debhelper-compat (= 12), bash-completion
-Standards-Version: 4.5.1
+Standards-Version: 4.6.2
 Vcs-Git: https://github.com/mechatrax/sleepi3-utils.git
 Vcs-browser: https://github.com/mechatrax/sleepi3-utils
 Homepage: https://mechatrax.com/

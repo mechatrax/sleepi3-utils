@@ -1,14 +1,14 @@
 [Unit]
 Description=sleepi3-utils preprocess
 DefaultDependencies=no
-After=sysinit.target
+BindsTo=dev-i2c\x2d1.device
+After=sysinit.target dev-i2c\x2d1.device
 Before=shutdown.target
 
 [Service]
 Type=oneshot
-EnvironmentFile=/etc/default/sleepi3
-ExecStart=/usr/lib/sleepi3-utils/start.sh
+ExecStartPre=/bin/bash -c '[ $(sleepi3ctl get wakeup-status) -eq 1 ] && sleepi3alarm clear || true'
+ExecStart=/usr/lib/sleepi3-utils/config.py start
 TimeoutSec=30s
+RemainAfterExit=yes
 
-[Install]
-WantedBy=sysinit.target

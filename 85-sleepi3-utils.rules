@@ -1,1 +1,2 @@
 ACTION=="add", SUBSYSTEM=="rtc", TAG+="systemd", ENV{SYSTEMD_WANTS}+="sleepi3-hctosys.service"
+ACTION=="add", KERNEL=="i2c-1", SUBSYSTEM=="i2c-dev", TAG+="systemd", ENV{SYSTEMD_WANTS}+="sleepi3-start.service"
