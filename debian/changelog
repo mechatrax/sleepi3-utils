@@ -1,3 +1,9 @@
+sleepi3-utils (1.0.5.1) bullseye; urgency=medium
+
+  * Fix prerm
+
+ -- Masahiro Honda <honda@mechatrax.com>  Thu, 30 Nov 2023 18:15:45 +0900
+
 sleepi3-utils (1.0.5) bullseye; urgency=medium
 
   * debian/control: Add Uploaders
