@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+. /etc/default/sleepi3 || true
+
+if [ -d /run/systemd/system ]; then
+       systemctl --system daemon-reload >/dev/null || true
+       udevadm control --reload-rules || true
+fi
+
+#DEBHELPER#
+
+if [ "$1" = "configure" ] && [ -n "$2" ]; then
+       deb-systemd-invoke start sleepi3-heartbeat.service >/dev/null || true
+       sleepi3ctl set watchdog-timeout $HEARTBEAT_TIMEOUT || true
+else
+       sleepi3ctl set watchdog-timeout 0 || true
+fi
+
+exit 0

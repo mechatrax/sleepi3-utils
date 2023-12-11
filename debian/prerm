@@ -6,10 +6,7 @@
 set -e
 
 case "$1" in
-    upgrade)
-    ;;
-
-    purge|remove|failed-upgrade|abort-install|abort-upgrade|disappear)
+    upgrade|purge|remove|failed-upgrade|abort-install|abort-upgrade|disappear)
         sleepi3ctl set watchdog-timeout 0 || true
     ;;
 
