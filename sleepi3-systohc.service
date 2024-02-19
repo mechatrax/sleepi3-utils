@@ -1,7 +1,6 @@
 [Unit]
 Description=Synchronize system clock to sleepi3
 DefaultDependencies=no
-Requires=dev-rtc.device
 After=sleepi3-hctosys.service
 Before=shutdown.target
 Conflicts=sleepi3-monitor.service
