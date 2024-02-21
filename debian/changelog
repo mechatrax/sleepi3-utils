@@ -1,3 +1,10 @@
+sleepi3-utils (1.0.7) bookworm; urgency=medium
+
+  * Update to use specified RTC
+  * Remove unused dependencies in services
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Wed, 21 Feb 2024 11:40:06 +0900
+
 sleepi3-utils (1.0.6.1) bookworm; urgency=medium
 
   * debian/postinst: Added

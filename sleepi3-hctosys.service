@@ -1,8 +1,6 @@
 [Unit]
 Description=Initialize system clock from sleepi3
 DefaultDependencies=no
-Requires=dev-rtc.device
-After=dev-rtc.device
 Before=time-sync.target sysinit.target
 
 [Service]
