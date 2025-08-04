@@ -5,6 +5,7 @@ RETRY=2
 TIMEOUT=15
 
 [ "$SYSTOHC" = "yes" ] || exit 0
+[ -e "$DEVICE" ] || exit 0
 
 for i in `seq $RETRY`
 do

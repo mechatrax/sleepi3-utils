@@ -1,3 +1,9 @@
+sleepi3-utils (1.0.9) bookworm; urgency=medium
+
+  * Limit hctosys and systohc to slee-Pi 3 RTC only
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Mon, 14 Jul 2025 15:36:17 +0900
+
 sleepi3-utils (1.0.8) bookworm; urgency=medium
 
   * Add service for halt target
