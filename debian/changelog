@@ -1,3 +1,14 @@
+sleepi3-utils (1.0.9.1) trixie; urgency=medium
+
+  * Update for trixie
+  * debian/control
+    - Bump Standards-Version to 4.7.2
+    - Bump debhelper-compat to 13
+    - Add util-linux-extra to Depends for hwclock
+  * debian/install: Moved service to /usr
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Fri, 31 Oct 2025 16:13:35 +0900
+
 sleepi3-utils (1.0.9) bookworm; urgency=medium
 
   * Limit hctosys and systohc to slee-Pi 3 RTC only
