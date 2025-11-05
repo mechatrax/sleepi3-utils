@@ -11,7 +11,7 @@ Homepage: https://mechatrax.com/
 
 Package: sleepi3-utils
 Architecture: all
-Depends: ${misc:Depends}, sleepi3-firmware, python3-sleepi, python3
+Depends: ${misc:Depends}, sleepi3-firmware, python3-sleepi, python3, util-linux-extra
 Conflicts: fake-hwclock, sleepi-utils, sleepi2-utils
 Description: Utilities for slee-Pi 3
  This package contains command utilities to control slee-Pi 3.

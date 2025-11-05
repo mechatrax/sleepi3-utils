@@ -323,26 +323,26 @@ slee-Pi 3 をコマンド操作するためのヘルパクラスが実装され�
 ### /usr/share/doc/sleepi3-utils/copyright  
 ソースの著作権とライセンスを記載したファイルです。
 
-### /lib/udev/rules.d/85-sleepi3-utils.rules  
+### /usr/lib/udev/rules.d/85-sleepi3-utils.rules  
 slee-Pi 3 のデバイスを定義した設定ファイルです。
 
-### /lib/systemd/system/sleepi3-halt.service  
+### /usr/lib/systemd/system/sleepi3-halt.service  
 slee-Pi 3 の終了設定を行うサービスです。
 
-### /lib/systemd/system/sleepi3-hctosys.service  
+### /usr/lib/systemd/system/sleepi3-hctosys.service  
 リアルタイムクロックからシステムへ時刻を同期するサービスです。
 
-### /lib/systemd/system/sleepi3-heartbeat.service  
+### /usr/lib/systemd/system/sleepi3-heartbeat.service  
 ソフトウェアハートビートを実行するサービスです。
 
-### /lib/systemd/system/sleepi3-restart.service  
+### /usr/lib/systemd/system/sleepi3-restart.service  
 slee-Pi 3 の再起動設定を行うサービスです。
 
-### /lib/systemd/system/sleepi3-start.service  
+### /usr/lib/systemd/system/sleepi3-start.service  
 slee-Pi 3 の起動設定を行うサービスです。
 
-### /lib/systemd/system/sleepi3-stop.service  
+### /usr/lib/systemd/system/sleepi3-stop.service  
 slee-Pi 3 の終了設定を行うサービスです。
 
-### /lib/systemd/system/sleepi3-systohc.service  
+### /usr/lib/systemd/system/sleepi3-systohc.service  
 システムからリアルタイムクロックへ時刻を同期するサービスです。
